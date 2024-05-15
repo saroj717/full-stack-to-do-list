@@ -1,6 +1,5 @@
 <%= javascript_pack_tag 'index', 'data-turbolinks-track': 'reload' %>
 
-
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
@@ -10,9 +9,11 @@
           <div id="todo-list-wrapper">
             <div id="input-wrapper">
               <span id="toggle-all"></span>
-              <input id='task-input' class="form-control" placeholder='What needs to be done?' autocomplete="off">
+              <form id="task-form">
+                <input id='task-input' class="form-control" placeholder='What needs to be done?' autocomplete="off">
+              </form>
             </div>
-            <div id='todo-list'>
+            <div id='tasks'>
             </div>
             <div id="footer">
               <span><span id="active-tasks"></span> items left</span>
